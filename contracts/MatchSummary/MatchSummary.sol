@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract MatchSummary {
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+
+contract MatchSummary is Initializable {
     event MatchCommitted(
         uint256 indexed date,
         string location,
